@@ -2,17 +2,17 @@
 # Conditional build:
 %bcond_with	tests		# build without tests
 #
-%define		kdeframever	5.249.0
+%define		kdeframever	6.0
 %define		qtver		5.15.2
 %define		kfname		modemmanager-qt
 Summary:	Qt wrapper for ModemManager DBus API
 Name:		kf6-%{kfname}
-Version:	5.249.0
-Release:	0.1
+Version:	6.0.0
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
-Source0:	https://download.kde.org/unstable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	a2a29b7b63cdbd4fca3cc729bb47d658
+Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
+# Source0-md5:	e6ae9483863a45be56557c0500a17568
 URL:		http://www.kde.org/
 BuildRequires:	ModemManager-devel
 BuildRequires:	Qt6Core-devel >= %{qtver}
